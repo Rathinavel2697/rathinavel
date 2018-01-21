@@ -1,15 +1,15 @@
 #include <stdio.h>
 int main()
 {
-    long long n;
+    long long l;
     int count = 0;
 
     printf("Enter an integer: ");
-    scanf("%lld", &n);
+    scanf("%lld", &l);
 
-    while(n != 0)
+    while(l != 0)
     {
-        n /= 10;
+        l=l/10;
         ++count;
     }
 
