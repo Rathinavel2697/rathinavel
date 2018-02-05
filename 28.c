@@ -1,12 +1,11 @@
 #include<stdio.h>
-#include<conio.h>
-void main()
+int main()
 {
-  int a,b,n;
+  int min,hr,n;
   printf("\n Enter the minutes=");
   scanf("%d",&n);
-  a=n/60;
-  b=n%60;
-  printf("\n time=%d:%d",a,b);
-  getch();
+  min=n/60;
+  hr=n%60;
+  printf("\n time=%d:%d",min,hr);
+  return 0;
 }
