@@ -2,7 +2,7 @@
 
 int main(void) {
 
-int a[50],i,j,temp=0;
+int a[50],i,j,t=0;
 for(i=0;i<10;i++)
 {
 	scanf("%d",&a[i]);
@@ -13,9 +13,9 @@ for(i=0;i<10;i++)
 	{
 		if(a[i]>a[j])
 		{
-			temp=a[i];
+			t=a[i];
 			a[i]=a[j];
-			a[j]=temp;
+			a[j]=t;
 		}
 	}
 }
