@@ -1,26 +1,17 @@
-#include <stdio.h>
-#include<string.h>
+#include<stdio.h>
 int main()
 {
-	int i,a,n,count=0;
-	char s[100];
-	
-gets(s);
-	n=strlen(s);
-	printf("%d/n",n);
-	for(i=0;i<n;i++)
+	int i,count=1;
+	char ch[50];
+	scanf("%[^/n]s",ch);
+	for(i=0;ch[i]!='\0';i++)
 	{
-	if(s[i]=='0'&&s[i]=='1')
+		if(ch[i]==' ' )
 		{
-			printf("yes\n");
 			count++;
-		}
-		else
-		{
-		printf("no\n");
-		
+			
 		}
 	}
-	
+	printf("%d",count);
 	return 0;
 }
